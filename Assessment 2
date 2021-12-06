@@ -1,0 +1,76 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+    string name;
+    cout << "Please Enter Your Name " << endl;
+    getline(cin, name);
+    cout << " Welcome " << name << endl;
+    int x, fac = 1;
+    cout << "Please Enter The Number You Want The Factorial Of" << endl;
+    cin >> x;
+    while (cin.fail())
+    {
+        cout << " Please Kidly Enter a Whole Number , DO NOT Enter Alphabets / Decimals " << endl;
+        cin.clear();
+        cin.ignore();
+        cin >> x;
+    }
+    for (int y = x; y > 0; y--)
+    {
+        fac = y * fac;
+    }
+    cout << " The Factorial Of Your Number Is " << fac << endl;
+    int b, c = 0;
+    cout << " Please Kindly Enter The Number Of The Table You Require " << endl;
+    cin >> b;
+    while (cin.fail())
+    {
+        cout << " Please Kidly Enter a Whole Number , DO NOT Enter Alphabets / Decimals " << endl;
+        cin.clear();
+        cin.ignore();
+            cin >> b;
+    }
+    while (c <= 10)
+    {
+        int t;
+        t = b * c;
+        cout << b << " * " << c << " = " << t << endl;
+        
+        c++;
+
+
+    }
+    int B, e, i, a;
+    cout << " Please Enter The Base Number " << endl;
+    cin >> B;
+    while (cin.fail())
+    {
+        cout << " Please Kidly Enter a Whole Number , DO NOT Enter Alphabets / Decimals " << endl;
+        cin.clear();
+        cin.ignore();
+        cin >> B;
+    }
+    cout << " Please Enter The Power Value Of The Number " << endl;
+    cin >> e;
+    while (cin.fail())
+    {
+        cout << " Please Kidly Enter a Whole Number , DO NOT Enter Alphabets / Decimals " << endl;
+        cin.clear();
+        cin.ignore();
+        cin >> e;
+    }
+    a = 1;
+    i = 1;
+    do
+    {
+        a = a * B;
+        i++;
+    
+
+    } 
+    while (i <= e);
+    cout << " The Answer Is " << a;
+
+}
